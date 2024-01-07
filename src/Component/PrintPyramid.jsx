@@ -2,13 +2,11 @@ import React, { useState } from 'react';
 
 const PrintPyramid=()=>{
 
-
-  const[height,setHeight]=useState(1)
+ const[height,setHeight]=useState(1)
   const handleInputChange=(e)=>{
-    const newHeight=parseInt(e.target.value,'10')
-    setHeight(newHeight||'1')
-
-  }
+    const newHeight=parseInt(e.target.value)
+    setHeight(newHeight)
+ }
 
   const renderPyramid = () => {
     const PyramidArray =[];
@@ -22,7 +20,6 @@ const PrintPyramid=()=>{
     return PyramidArray.join('\n');
   };
  
-
   return(
     <div>
     <label>Enter Row Limit:

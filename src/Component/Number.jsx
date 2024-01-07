@@ -3,8 +3,8 @@ import React, { useState } from 'react'
 const Number=()=>{
   const [height,setHeight]=useState(1)
   const handleInputChange=(e)=>{
-    const newHeight=parseInt(e.target.value,'10')
-    setHeight(newHeight||'1')
+    const newHeight=parseInt(e.target.value)
+    setHeight(newHeight)
 
   }
 const renderNumer=()=>{
